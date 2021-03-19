@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-4">
+        <img [src]="ciclo.imagen"/>
+        <h1>{{ciclo.nombre}} {{ciclo.curso}}</h1>
+        <br>
+        <h3>Conocimientos necesarios</h3>
+        <ul>
+            <li *ngFor="let conocimiento of conocimientos">{{conocimiento}}</li>
+        </ul>
+    </div>
+    <div class="col-8">
+        <h3>Las asignaturas del ciclo son:</h3>
+        <div class="row">
+            <div class="col" *ngFor="let asignatura of asignaturas">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">{{asignatura.nombre.toUpperCase()}}</h5>
+                      <p class="card-text">Profesor: {{asignatura.profesor}}</p>
+                      <p class="card-text">Ciclo: {{asignatura.ciclo}}</p>
+                      <p class="card-text">Curso: {{asignatura.curso}}</p>
+                      <div class="row">
+                          <div class="col-3" *ngFor="let conocimiento of asignatura.conocimientos">
+                            <img [src]="conocimiento.imagen" class="card-img-top" alt="...">
+                          </div>
+                      </div>
+                      <a class="btn btn-primary mt-4">Ver detalle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
