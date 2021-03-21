@@ -11,25 +11,25 @@ export class CiclosService {
       nombre: 'DAM',
       curso: 1,
       asignaturas: [],
-      imagen: 'assets/images/dam.jpeg',
+      imagen: './assets/images/dam.jpeg',
     },
     {
       nombre: 'DAM',
       curso: 2,
       asignaturas: [],
-      imagen: 'assets/images/dam.jpeg',
+      imagen: './assets/images/dam.jpeg',
     },
     {
       nombre: 'DAW',
       curso: 1,
       asignaturas: [],
-      imagen: 'assets/images/daw.jpeg',
+      imagen: './assets/images/daw.jpeg',
     },
     {
       nombre: 'DAW',
       curso: 2,
       asignaturas: [],
-      imagen: 'assets/images/daw.jpeg',
+      imagen: './assets/images/daw.jpeg',
     },
   ];
 
